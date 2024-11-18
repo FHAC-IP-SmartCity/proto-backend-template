@@ -44,7 +44,7 @@ void PipeLine::send(uint64_t id, int64_t value) {
     Serial.write(bytes, bp.getIndex());
 }
 
-void send(uint64_t id, double value) {
+void PipeLine::send(uint64_t id, double value) {
     cbor::Writer cbor{bp};
     bp.reset();
     cbor.beginMap(2);
