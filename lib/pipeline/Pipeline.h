@@ -46,6 +46,9 @@ class PipeLine {
         // Closes a proto session
         // The session can reopen with PipeLine::tryOpen()
         void close();
+
+        // helloworld
+        void helloworld();
 };
 
 extern PipeLine pipeline;
