@@ -36,6 +36,7 @@ void loop() {
   // Das Programm läuft weiter und die Verbindung kann mit tryOpen()
   // wieder aufgenommen werden
   pipeline.close();
+  delay(1000);
   delay(5000);
 }
 
