@@ -9,6 +9,9 @@ void setup() {
 }
 
 void loop() {
+  // Die Verbindung ist noch nicht offen, deswegen schickt pipeline diese Ausgabe als
+  // rohe Nachricht (Serial.println). Proto zeigt diese Nachricht mit `proto listen --raw` an.
+  pipeline.println("Rohe Ausgabe");
   // tryOpen versucht die Pipe zu öffnen
   // gibt true zurück wenn proto zuhört und false wenn nicht
   // Ausgabe == pipeline.isOpen()
